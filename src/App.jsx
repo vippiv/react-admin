@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Redirect, Route } from 'react-router-dom'
 import { adminRoutes, subRoutes } from './routes'
-import Frame from './components/Frame/index'
+import Frame from './components/Frame/index.jsx'
 
 function App() {
 	return (

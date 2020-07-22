@@ -19,3 +19,7 @@ code {
 .ant-layout {
   height: 100vh;
 }
+
+.ant-row {
+  margin-bottom: 8px;
+}
