@@ -1,0 +1,14 @@
+.todo_style {
+    line-height: 2;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.todo_style > li:hover .del{
+    display: inline;
+}
+
+.del {
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}

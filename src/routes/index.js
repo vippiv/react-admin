@@ -1,5 +1,6 @@
 import Login from '../views/login'
 import FrontIndex from '../views/front/index/index'
+import Todo from '../views/front/todo/index'
 import Index from '../views/admin/dashboard/index'
 import List from '../views/admin/products/list'
 import Edit from '../views/admin/products/edit'
@@ -12,6 +13,10 @@ export const mainRoutes = [{
 	path: '/',
 	exact: true,
 	component: FrontIndex
+}, {
+	path: '/todo',
+	exact: true,
+	component: Todo
 }, {
 	path: '/login',
 	component: Login
