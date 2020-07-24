@@ -3,6 +3,7 @@ import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import './index.css';
 import { mainRoutes } from './routes/index';
 import App from './App.jsx'
+import FrontApp from '@/views/front/framework/index.jsx'
 import 'antd/dist/antd.css'
 
 // ReactDOM.render(
@@ -22,6 +23,7 @@ const renderRoute = () => (
 	<Router>
 		<Switch>
 			<Route path="/admin" render={routeProps => <App {...routeProps} />} />
+			<Route path="/" render={routeProps => <FrontApp {...routeProps} />} />
 			{mainRoutes.map(route => {
 				return <Route key={route.path} {...route }/>
 			})}

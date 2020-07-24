@@ -42,7 +42,6 @@ class Todo extends React.Component {
 		return (
 			<>
 				<Layout>
-					<Sider></Sider>
 					<Content>
 						<Row>
 							<Col span={24}>

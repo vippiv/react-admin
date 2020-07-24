@@ -139,7 +139,6 @@ class Index extends Component {
 		return (
 			<>
 				<Layout>
-					<Sider theme="dark">Component Demo</Sider>
 					<Content>
 						<Row>
 							<Col span={24}>

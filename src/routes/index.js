@@ -7,6 +7,8 @@ import Edit from '../views/admin/products/edit'
 import SyncManage from '../views/admin/syncManage/index'
 import backAdmin from '../views/admin/backAdmin/index'
 import TplManage from '../views/admin/tplManage/index'
+import BaseDemo from '@/views/front/index/index'
+import TODOList from '@/views/front/todo/index'
 import PageNotFound from '../views/404'
 
 export const mainRoutes = [{
@@ -104,6 +106,22 @@ export const adminRoutes = [{
 	isShow: true,
 	subRoutes: []
 }]
+
+export const frontRoutes = [
+	{
+		path: '/',
+		component: BaseDemo,
+		title: '基础DEMO',
+		exact: true,
+		isShow: true
+	}, {
+		path: '/todo',
+		component: TODOList,
+		title: 'TODOList',
+		exact: true,
+		isShow: true
+	}
+]
 
 export const subRoutes = [{
 	path: '/admin/basedata/syncManage',
