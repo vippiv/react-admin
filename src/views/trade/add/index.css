@@ -1,0 +1,20 @@
+.w30 {
+	float: left;
+	width: 30%;
+	height: 40px;
+	margin-right: 1%;
+}
+
+.box {
+	border: 1px solid #e8e8e8;
+	margin-bottom: 20px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* 解决验证导致的页面变形 */
+.product-info .ant-form-item-with-help {
+	margin-bottom: 24px !important;
+}

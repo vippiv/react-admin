@@ -3,16 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.0",
     "cra-template": "1.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-redux": "^7.2.2",
+    "react-scripts": "3.4.1",
+    "react-thunk": "^1.0.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "dev": "react-app-rewired start",
-    "start": "react-scripts start",
-    "build:prod": "react-app-rewired build",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -32,7 +35,7 @@
     ]
   },
   "devDependencies": {
-    "antd": "^4.4.3",
+    "antd": "^3.26.20",
     "customize-cra": "^1.0.0",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.6",

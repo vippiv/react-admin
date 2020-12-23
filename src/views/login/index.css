@@ -1,0 +1,110 @@
+.user-login {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #2d3a4b;
+	z-index: 9999999;
+}
+
+.user-login-main-form-content {
+	position: relative;
+    width: 520px;
+    max-width: 100%;
+    padding: 160px 35px 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.user-login .title{
+	font-size: 26px;
+    color: #eee;
+    margin: 0px auto 40px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.user-login .ant-form-item-control-wrapper {
+	border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+	color: #454545;
+	height: 42px;
+}
+
+.user-login .ant-input {
+	background-color: transparent;
+	border-color: transparent;
+	color: white;
+}
+
+.user-login-main-form-btn {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0!important;
+}
+
+.user-login-main-form-submit {
+	width: 100%;
+	margin-top: 2%;
+}
+
+.user-login-main-form-submit,
+.user-login-main-form-submit:focus {
+	color: #fff!important;
+	background: #1d93a8!important;
+	border-color: #1d93a8!important;
+}
+
+.user-login-main-form-submit:hover {
+	color: #fff!important;
+	background: #007c91!important;
+	border-color: #007c91!important;
+}
+
+.user-login-main-form-btn .ant-form-item-control-wrapper {
+	border-color: transparent !important;
+	background-color: transparent !important;
+}
+
+.user-login .ant-input:focus {
+	border-color: transparent !important;
+	box-shadow: none !important;
+}
+
+.user-login .ant-input:hover {
+	border-color: transparent !important;
+	box-shadow: npne !important;
+}
+
+.user-login .ant-input-affix-wrapper .ant-input-prefix {
+	color: #889aa4 !important;
+	font-size: 16px;
+}
+
+.user-login .pass-info {
+	margin-top: 15px;
+	color: white;
+	font-size: 16px;
+}
+
+.user-login .pass-info p {
+	margin-bottom: 0px;
+	line-height: 2;
+}
+
+.has-error .ant-input-affix-wrapper .ant-input, .has-error .ant-input-affix-wrapper .ant-input:hover {
+	background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.user-login .ant-form-item-with-help {
+	margin-bottom: 24px;
+}
+
+.user-login .ant-form-explain {
+	line-height: 2.2;
+}

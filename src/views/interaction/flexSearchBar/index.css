@@ -1,0 +1,69 @@
+.form-item-1, .form-item-2, .form-item-3, .form-item-4, .form-item-5, .form-item-6 {
+	width: 100%;
+}
+
+.form-item-1 .ant-form-item-label{
+	width: 66px;
+}
+
+.form-item-1 > .ant-form-item-control-wrapper{
+	width: calc(100% - 66px);
+}
+
+.form-item-2 .ant-form-item-label{
+	width: 105px;
+}
+
+.form-item-2 > .ant-form-item-control-wrapper{
+	width: calc(100% - 105px);
+}
+
+.form-item-3 .ant-form-item-label{
+	width: 80px;
+}
+
+.form-item-3 > .ant-form-item-control-wrapper{
+	width: calc(100% - 80px);
+}
+
+.form-item-4 .ant-form-item-label{
+	width: 80px;
+}
+
+.form-item-4 > .ant-form-item-control-wrapper{
+	width: calc(100% - 80px);
+}
+
+.form-item-5 .ant-form-item-label{
+	width: 80px;
+}
+
+.form-item-5 > .ant-form-item-control-wrapper{
+	width: calc(100% - 80px);
+}
+
+.form-item-5 .ant-form-item-children .ant-form-item {
+	width: 50%;
+	margin-right: 0;
+}
+
+.form-item-5 .ant-form-item-children .ant-form-item .ant-form-item-control-wrapper {
+	width: 100%;
+}
+
+.form-item-6 .ant-form-item-label{
+	width: 80px;
+}
+
+.form-item-6 .ant-form-item-control-wrapper{
+	width: calc(100% - 80px);
+}
+
+.form-item-6 .ant-form-item-children .ant-form-item {
+	width: 50%;
+	margin-right: 0;
+}
+
+.form-item-6 .ant-form-item-children .ant-form-item .ant-form-item-control-wrapper {
+	width: 100%;
+}

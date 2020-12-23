@@ -1,0 +1,63 @@
+.sider-menu {
+	height: 100%;
+	box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+	background: #001529;
+	overflow-y: auto;
+}
+
+.sider-menu-logo {
+	height: 64px;
+	position: relative;
+	line-height: 64px;
+	transition: all .3s;
+	background: #002140;
+	overflow: hidden;
+}
+
+.sider-menu-name {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.sider-menu-link {
+	display: inline;
+	color: #fff!important;
+	opacity: 1;
+	transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.sider-menu-link:hover {
+	color: #ffffff;
+}
+
+.ant-menu {
+	background-color: transparent !important;
+}
+
+.ant-menu-item, .ant-menu-submenu {
+	color: rgb(191, 203, 217) !important;
+}
+
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+	color: #bfcbd9 !important;
+}
+
+.ant-menu-item > a:hover {
+	color: #fff!important;
+}
+
+.ant-menu-item-selected {
+	background-color: transparent !important;
+	color: rgb(64, 158, 255);
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+	color: #fff!important;
+}
+
