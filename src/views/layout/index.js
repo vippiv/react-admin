@@ -259,12 +259,14 @@ class App extends Component {
     }
 }
 
-const mapStateToProps = state => ({
-    isAuth: state.global.isAuth,
-    userName: state.global.userName,
-    token: state.global.token,
-    clientHeight: state.global.clientHeight,
-    siderMenulist: state.global.siderMenuList
-})
+const mapStateToProps = state => {
+    return {
+        isAuth: state.global.isAuth,
+        userName: state.global.userName,
+        token: state.global.token,
+        clientHeight: state.global.clientHeight,
+        siderMenulist: state.global.siderMenuList
+    }
+}
 
 export default connect(mapStateToProps)(withRouter(Form.create()(App)))

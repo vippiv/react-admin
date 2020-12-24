@@ -1,4 +1,4 @@
-import apis from '../../apis'
+import apis from '@/apis'
 import fetch from '@/utils/request'
 
 const LogoutActionType = 'views/logout_INIT_ACTION_TYPE'

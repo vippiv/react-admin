@@ -1,23 +1,35 @@
 import React, { Component } from 'react'
 import { Input, Icon, Form, Button } from 'antd'
+import { saveUserName } from '@/global/globalReducer'
+import { connect } from 'react-redux'
 import { setItem } from '@/utils'
 import './index.css'
 
 class Login extends Component {
+
 	state = {
 		submitLoading: false
 	}
+
 	handleSubmit = () => {
 		this.props.form.validateFields((err, login) => {
 		if (err) return
 			const { userAccount, userPassword } = login
 			if ( userAccount === 'admin' && userPassword === 'admin' ) {
-				console.log('jinru')
 				setItem("token", '2248708e-5a27-4dea-8670-38753009d340')
+				const userName = {
+					userName: userAccount
+				}
+				this.props.dispatch(saveUserName(userName))
 				this.props.history.push('/homePage')
 			}
 		})
 	}
+
+	componentDidMount = () => {
+		// console.log('this.props', this.props)
+	}
+
 	render() {
 		const { getFieldDecorator } = this.props.form
 		return (
@@ -68,7 +80,7 @@ class Login extends Component {
 			</>
 			
 		)
-	  }
+	}
 }
 
-export default Form.create()(Login)
+export default connect()(Form.create()(Login))
