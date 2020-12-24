@@ -20,6 +20,12 @@ const routes = [
 			link: "/flexSearchBar",
 			title: "搜索栏弹性布局",
 			uuid: "93c24576-da08-4de4-995d-08cd708c24f1"
+		}, {
+			icon: "",
+			key: "/dynamicForm",
+			link: "/dynamicForm",
+			title: "动态表单元素",
+			uuid: "93c24576-da08-4de4-995d-08cd70j7c24f1"
 		}]
 	},
 	{
