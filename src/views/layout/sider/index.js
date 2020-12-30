@@ -75,6 +75,7 @@ class SiderMenu extends Component {
             if (item.link === pathname) {
                 this.props.dispatch(globalReduck.globalAction({ selectedKeys: [`${item.uuid}`]}))
             }
+            return ''
         })
     }
 

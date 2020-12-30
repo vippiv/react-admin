@@ -4,6 +4,7 @@ import FlexSearchBar from '@/views/interaction/flexSearchBar'
 import TradeList from '@/views/trade'
 import ProductsAdd from '@/views/trade/add'
 import DynamicForm from '@/views/interaction/dynamicForm'
+import InjectScript from '@/views/interaction/injectScript'
 
 const routes = [
 	{
@@ -39,6 +40,11 @@ const routes = [
 		path: routePath.dynamicForm,
 		exact: true,
 		component: DynamicForm
+	}, {
+		key: routePath.injectScript,
+		path: routePath.injectScript,
+		exact: true,
+		component: InjectScript
 	}
 ]
 

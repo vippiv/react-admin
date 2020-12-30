@@ -15,7 +15,9 @@ const routePath = {
 
     productsAdd: `${BASE_PATH}/tradeList/add`,
 
-    dynamicForm: `${BASE_PATH}/dynamicForm`
+    dynamicForm: `${BASE_PATH}/dynamicForm`,
+
+    injectScript: `${BASE_PATH}/injectScript`
 }
 
 export default routePath 

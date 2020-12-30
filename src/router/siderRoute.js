@@ -26,6 +26,12 @@ const routes = [
 			link: "/dynamicForm",
 			title: "动态表单元素",
 			uuid: "93c24576-da08-4de4-995d-08cd70j7c24f1"
+		}, {
+			icon: "",
+			key: "/injectScript",
+			link: "/injectScript",
+			title: "注入脚本",
+			uuid: "93c24576-ddd8-4de4-995d-08cd70j7c24f1"
 		}]
 	},
 	{

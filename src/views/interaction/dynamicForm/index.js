@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
 import { Form, Input, Select, Col, Checkbox, Radio, DatePicker, Button } from 'antd'
+import FieldModal from './fieldModal'
 import './index.css'
 
 class DynamicForm extends Component {
+
+	state = {
+		visible: false
+	}
 
 	dataSource = [
 		{
@@ -157,6 +162,18 @@ class DynamicForm extends Component {
 		})
 	}
 
+	handleExtendData = () => {
+		this.setState({
+			visible: true
+		})
+	}
+
+	handleCloseModal = () => {
+		this.setState({
+			visible: false
+		})
+	}
+
 	render () {
 		return (
 			<div className="dynamic-from-container">
@@ -165,10 +182,18 @@ class DynamicForm extends Component {
 					{this.createForm()}
 					<Col span={24} style={{textAlign: 'right'}}>
 						<Form.Item>
-							<Button type="primary" htmlType="submit" onClick={this.handleSubmit}>submit</Button>
+							<Button type="primary" htmlType="submit" onClick={this.handleSubmit}>Submit</Button>
+						</Form.Item>
+						<Form.Item>
+							{/* TODO 增加数据编辑窗口，用于动态增加数据(填表格的形式实现) */}
+							<Button type="primary" htmlType="submit" onClick={this.handleExtendData}>Extend Data</Button>
 						</Form.Item>
 					</Col>
 				</Form>
+				<FieldModal 
+					close={this.handleCloseModal}
+					visible={this.state.visible}
+				/>
 			</div>
 		)
 	}
