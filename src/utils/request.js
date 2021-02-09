@@ -13,14 +13,6 @@ const getToken = () => {
     return getItem('token')
 }
 
-const removeToken = () => {
-    removeItem('token')
-    removeItem('userName')
-    if (!window.location.href.includes(routePaths.login)) {
-        window.location.href = routePaths.login
-    }
-}
-
 const handleResponseEnum = {
     '510': removeItem
 }
